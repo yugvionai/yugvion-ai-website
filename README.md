@@ -14,7 +14,7 @@ We help businesses and individuals leverage technology to grow faster and smarte
 - Logo Design
 - Poster Design
 - Project Development
-- AI-based Tools & Solutions
+- AI-based Tools & Solutions.
 
 ## 👨‍💼 Founder
 Preetham  
