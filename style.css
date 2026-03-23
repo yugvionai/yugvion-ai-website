@@ -2057,3 +2057,64 @@ header {
 .hero {
   margin-top: 0;
 }
+/* ================= PERFORMANCE & SMOOTH SCROLL ================= */
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better mobile scrolling */
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ================= ANIMATION OPTIMIZATION ================= */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  will-change: transform, opacity;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= MOBILE PERFORMANCE FIX ================= */
+
+@media (max-width: 768px) {
+
+  /* Disable heavy animations on mobile */
+  .fade-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  /* Reduce blur (heavy effect) */
+  .bg-shape {
+    filter: blur(30px);
+  }
+
+  /* Reduce shadow load */
+  .service-card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* ================= GENERAL LIGHTWEIGHT UI ================= */
+
+/* Prevent horizontal lag */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Optimize images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
