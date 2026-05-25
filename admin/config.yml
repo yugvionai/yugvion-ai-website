@@ -7,12 +7,12 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "projects"
-    label: "Projects"
-    folder: "projects"
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "_portfolio"
     create: true
-
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "body", widget: "markdown" }
       - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "body", widget: "markdown" }
