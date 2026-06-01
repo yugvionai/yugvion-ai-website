@@ -2118,3 +2118,12 @@ img {
   height: auto;
   display: block;
 }
+/* Center Coming Soon Image */
+.portfolio-placeholder img,
+.portfolio img,
+.coming-soon img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
