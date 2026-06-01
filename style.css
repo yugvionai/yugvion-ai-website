@@ -2127,6 +2127,16 @@ img {
     max-width: 100%;
     height: auto;
 }
-.about {
-    padding: 40px 10% !important;
+@media (max-width: 768px) {
+
+  .about {
+      padding-top: 20px !important;
+      padding-bottom: 20px !important;
+  }
+
+  .founder-section {
+      padding-top: 10px !important;
+      margin-top: 0 !important;
+  }
+
 }
